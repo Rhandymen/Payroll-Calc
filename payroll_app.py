@@ -27,7 +27,7 @@ def calculate_raise(base, raises, is_hourly=True):
     return results, total_raise, total_percent
 
 # --- Streamlit App Layout ---
-st.title("📈 3-Year Payroll Raise Calculator")
+st.title("📈 B-Ville Raise Calculator")
 
 pay_type = st.radio("Are you entering Hourly or Annual pay?", ["Hourly", "Annual"])
 base = st.number_input(f"Enter Starting {'Hourly' if pay_type == 'Hourly' else 'Annual'} Pay", min_value=0.0, step=0.01)
